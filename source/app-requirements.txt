@@ -2,8 +2,6 @@ pandas
 geopandas
 numpy
 plotly
-jupyter_widgets
-jupyter-leaflet
 shiny==0.4.0
 ipywidgets<=8.0.0
 shinywidgets==0.2.1
