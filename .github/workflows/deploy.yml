@@ -21,8 +21,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r source/app-requirements.txt
 
-      - name: Install shinylive
-        run: pip install shinylive
+      # - name: Install shinylive
+      #   run: pip install shinylive
 
       - name: Check Python version
         run: python --version
@@ -44,10 +44,17 @@ jobs:
   deploy:
     if: github.ref == 'refs/heads/main'
     needs: build
-    uses: posit-dev/r-shinylive/.github/workflows/deploy-app.yaml@actions-v1
 
     permissions:
       pages: write
       id-token: write
 
-        
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
