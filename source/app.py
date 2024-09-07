@@ -1,11 +1,9 @@
 from shiny import *
 from shiny import reactive
-from shinywidgets import output_widget, render_widget
+from shinywidgets import output_widget, render_widget, HTML, Layout, Label
 #from shiny.express import render
 #from ipywidgets import Label
-from ipywidgets import HTML
 import ipyleaflet as L
-from ipywidgets import Layout, Label
 from ipyleaflet import GeoJSON, LayersControl, WidgetControl, CircleMarker, LayerGroup, Marker, Popup, Circle, AwesomeIcon
 import pathlib
 from pathlib import Path
