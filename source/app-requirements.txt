@@ -4,4 +4,4 @@ numpy
 plotly
 ipywidgets<8.0.0
 ipyleaflet==0.17.3
-shinylive==0.2.7
+shinylive==0.2.4
