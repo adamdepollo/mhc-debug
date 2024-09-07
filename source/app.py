@@ -162,7 +162,7 @@ def build_marker_layer(LARA_C):
                     spin=False
                 )
 
-                popup_content = HTML()
+                popup_content = ui.HTML()
                 popup_content.value = (
                     f"Name: {mhvillage_df['Name'].iloc[ind]}<br>"
                     f"Sites: {mhsites}<br>"
