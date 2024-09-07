@@ -44,6 +44,7 @@ jobs:
   deploy:
     if: github.ref == 'refs/heads/main'
     needs: build
+    uses: posit-dev/r-shinylive/.github/workflows/deploy-app.yaml@actions-v1
 
     permissions:
       pages: write
@@ -53,8 +54,4 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: posit-dev/r-shinylive/.github/workflows/deploy-app.yaml@actions-v1
+        
