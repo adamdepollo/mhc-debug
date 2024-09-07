@@ -4,6 +4,4 @@ pandas
 geopandas
 numpy
 plotly
-jupyterlab_widgets
-ipywidgets
 ipyleaflet

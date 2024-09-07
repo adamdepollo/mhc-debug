@@ -30,9 +30,6 @@ jobs:
       - name: List installed packages
         run: pip list
 
-      - name: List jupyterlab extensions
-        run: jupyter labextension install @jupyter-widgets/jupyterlab-manager
-
       - name: Make shinylive deployment in docs/
         run: shinylive export source docs
 
