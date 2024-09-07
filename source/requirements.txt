@@ -2,7 +2,7 @@ pandas
 geopandas
 numpy
 plotly
-ipywidgets
-ipyleaflet
-shiny
-shinywidgets
+shiny==0.4.0
+ipywidgets==7.7.5
+shinywidgets==0.2.1
+ipyleaflet==0.17.3
