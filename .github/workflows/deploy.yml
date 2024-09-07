@@ -24,9 +24,6 @@ jobs:
       - name: Install shinylive
         run: pip install shinylive
 
-      - name: Install jupyter-widgets
-        run: pip install jupyter-widgets
-
       - name: Check Python version
         run: python --version
 
