@@ -1,6 +1,6 @@
 from shiny import *
 from shiny import reactive
-from shinywidgets import output_widget, render_widget, Layout, Label
+from shinywidgets import output_widget, render_widget
 #from shiny.express import render
 #from ipywidgets import Label
 import ipyleaflet as L
