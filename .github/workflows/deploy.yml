@@ -24,9 +24,6 @@ jobs:
       - name: Install shinylive
         run: pip install shinylive
 
-      - name: Test
-        run: jupyter nbextension enable --py --sys-prefix ipyleaflet
-
       - name: Check Python version
         run: python --version
 
