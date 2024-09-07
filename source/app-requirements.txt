@@ -3,6 +3,6 @@ geopandas
 numpy
 plotly
 shiny==0.4.0
-ipywidgets==7.7.5
+ipywidgets<=8.0.0
 shinywidgets==0.2.1
 ipyleaflet==0.17.3
