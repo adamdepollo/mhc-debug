@@ -4,5 +4,5 @@ pandas
 geopandas
 numpy
 plotly
-ipywidgets
+ipywidgets==7.7.2
 ipyleaflet
